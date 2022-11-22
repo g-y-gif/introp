@@ -1,4 +1,6 @@
 
+AOS.init();
+
 $(function(){
     // $('#fullpage').fullpage({
     //     slidesNavigation: true,
