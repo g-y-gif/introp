@@ -7,7 +7,7 @@ $(function(){
     $(".bt").click(function(){
         $(this).addClass("on")
         
-        var section = $(".aboutme").offset().top
+        var section = $(".about").offset().top
         $("html, body").delay(1000).animate({
             scrollTop: section
         }, 1000);
