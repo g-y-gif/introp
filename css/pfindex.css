@@ -29,8 +29,12 @@ li, ul {
 /* home */
 .home {
     position: relative;
-    background: url(/introp/imgs/overlay.gif);
+    background: url(/intropp/imgs/overlay.gif);
     background-size: cover;
+}
+.on {
+    background: #fff;
+    color: #000;
 }
 nav.top {
     width: 100%;
@@ -38,6 +42,7 @@ nav.top {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 100;
 }
 .top > ul {
     width: 800px;
@@ -50,6 +55,9 @@ nav.top {
     width: 25%;
     height: 100%;
 } 
+/* .top > ul > li:hover {
+    border-bottom: 5px solid #fff;
+} */
 .top > ul > li > a {
     display: block;
     width: 60%;
@@ -83,12 +91,15 @@ nav.top {
     border-radius: 50px;
     background: #fff;
     margin: 30px auto;
-    background: linear-gradient(to right, #a8edea, #fed6e3);
+    background: black;
+    cursor: pointer;
+}
+.bt.on {
     animation-name: back;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode:both;
     animation-direction: alternate;
 }
 .bt::after {
@@ -100,8 +111,10 @@ nav.top {
     border-radius: 50%;
     background: #fff;
     margin: 5px 10px;
+}
+.bt.on::after {
     animation-name: onoff;
-    animation-duration: 4s;
+    animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -122,7 +135,7 @@ nav.top {
         background: black;
     }
     to {
-        background: #a8edea;
+        background: linear-gradient(to right, #a8edea, #fed6e3);
     }
 }
 
@@ -159,17 +172,19 @@ nav.top {
 .aboutme .txtBox .title {
     font-family: 'Song Myung';
     font-size: 45px;
+    margin-bottom: 20px;
 }
 
 
 
 /* project */
-.project {
+.projectA, .projectB {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.project > .half {
+.projectA > .half,
+.projectB > .half {
     width: 100%;
     height: 50%;
     background: #fff;
@@ -191,23 +206,30 @@ nav.top {
 .preview img {
     flex-shrink: 0;
     width: 313px;
-    height: 677px;
     object-fit: cover;
     object-position: top;
 }
 
 
-.top50  {
+.top50, .bbttom50  {
     display: flex;
     align-items: center;
 }
-.top50 .box {
+.box {
     width: 95%;
     height: 90%;
     border-radius: 50px 50px 0 0;
     margin: 0 auto;
-    background: url(/introp/imgs/projectbackground.jpg) 0 0 no-repeat;
     background-size: cover;
+    overflow: hidden;
+}
+.top50 .box {
+    background: url(/intropp/imgs/projectbackground.png) 0 0 no-repeat;
+}
+.btop50 .box {
+    background: url(/intropp/imgs/projectBbackground.png) 50% 70% no-repeat;
+    background-size: 110%;
+    border-radius: 0;
 }
 
 .top50 h1 {
