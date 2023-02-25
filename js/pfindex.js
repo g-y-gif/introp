@@ -26,5 +26,7 @@ $(function(){
             marginTop: -img
         }, 3000)
     });
+
+    // about 호버 컬러
     
 });         

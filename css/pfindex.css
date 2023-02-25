@@ -154,22 +154,22 @@ nav.top {
     transform: rotate(-20deg);
 }
 .about h1 {
-    font-size: 130px;
+    font-size: 5em;
     font-family: 'Abril Fatface', cursive;
     text-align: center;
     position: absolute;
-    top: 130px;
-    left: 600px;
+    top: 8%;
+    left: 40%;
 }
 
 .about .txtBox {
     font-family: 'Gowun Batang';
     position: absolute;
-    top: 320px;
-    left: 700px;
+    top: 20%;
+    left: 50%;
 }
 .about .txtBox .title {
-    font-size: 45px;
+    font-size: 2em;
     margin: 20px 0 20px 0;
 
 }
@@ -246,6 +246,7 @@ nav.top {
     overflow: hidden;
 }
 .top50 .box {
+    margin: 0 auto;
     background: url(../imgs/projectbackground.png) 0 0 no-repeat;
 }
 .btop50 .box {
@@ -256,7 +257,7 @@ nav.top {
 }
 
 .top50 h1 {
-   font-size: 90px;
+   font-size: 5.2em;
    color: #fff;
-   margin: 10px 0 0 30px;
+   padding-left: 30px;
 }
