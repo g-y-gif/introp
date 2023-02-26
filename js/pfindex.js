@@ -3,6 +3,9 @@ AOS.init();
 
 
 $(function(){
+    // 새로 고침 상단 고정
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+
     // 홈 메인 버튼
     $(".bt").click(function(){
         $(this).addClass("on")
@@ -27,6 +30,12 @@ $(function(){
         }, 3000)
     });
 
-    // about 호버 컬러
-    
-});         
+    // about nav 호버 컬러 변경
+    $(window).scroll(function(){
+        if ($(this).scrollTop() >= $(".about").offset().top && $(this).scrollTop() <= $(".projectA").offset().top) {
+            $(".top > ul > li > a").css("color", "black");
+        } else {
+            $(".top > ul > li > a").css("color", "aliceblue");
+        }
+    });
+});
