@@ -54,13 +54,22 @@ $(function(){
         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
     });
 
-    // 프로젝트 프리뷰
+    // 프로젝트 프리뷰 A
     $(".preview").hover(function(){
         var img = $(".preview img").height()-677
         $(".preview img").animate({
             marginTop: -img
         }, 3000)
     });
+    
+    // 프로젝트 프리뷰 B
+    $(".previewB").hover(function(){
+        var imge = $(".previewB img").height()-335
+        $(".previewB img").animate({
+            marginTop: -imge
+        }, 3000)
+    });
+    
 
     // about nav 호버 컬러 변경
     $(window).scroll(function(){
