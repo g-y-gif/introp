@@ -258,32 +258,6 @@ nav.top {
     object-position: top;
 }
 
-
-/* .imgboxA {
-    width: 35%;
-    height: 40%;
-    display: flex;
-    position: absolute;
-    bottom: 10%;
-    left: 7%;
-}
-.imgbA1 {
-    width: 30%;
-    height: 100%;
-    background: url(../imgs/imagebox1.jpeg) 12% 20%;
-}
-.imgbA2 {
-    width: 30%;
-    height: 100%;
-    background: url(../imgs/imagebox2.jpeg) 12% 20%;
-}
-.imgbA3 {
-    width: 30%;
-    height: 100%;
-    background: url(../imgs/imagebox3.jpeg) 12% 20%;
-} */
-
-
 .top50, .btop50  {
     display: flex;
     align-items: center;
@@ -298,7 +272,7 @@ nav.top {
 
 .titleA {
     position: absolute;
-    width: 20%;
+    width: 22%;
     height: 40%;
     top: 50%;
     right: 38%;
@@ -355,13 +329,12 @@ nav.top {
 
  .titleB {
     position: absolute;
-    width: 20%;
+    width: 22%;
     height: 40%;
     top: 50%;
-    right: 22%;
+    right: 20%;
     display: flex;
     flex-direction: column;
-    /* justify-content: right; */
 }
 .titleB h3 {
     font-size: 2em;
@@ -372,4 +345,21 @@ nav.top {
     word-break: break-all;
     color: #adadad;
     padding: 10px 0 10px 0;
+}
+
+
+/* last page */
+.THANK_U {
+    position: relative;
+    background: url(../imgs/overlay.gif);
+}
+.THANK_U h1 {
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
 }
