@@ -259,6 +259,31 @@ nav.top {
 }
 
 
+/* .imgboxA {
+    width: 35%;
+    height: 40%;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+}
+.imgbA1 {
+    width: 30%;
+    height: 100%;
+    background: url(../imgs/imagebox1.jpeg) 12% 20%;
+}
+.imgbA2 {
+    width: 30%;
+    height: 100%;
+    background: url(../imgs/imagebox2.jpeg) 12% 20%;
+}
+.imgbA3 {
+    width: 30%;
+    height: 100%;
+    background: url(../imgs/imagebox3.jpeg) 12% 20%;
+} */
+
+
 .top50, .btop50  {
     display: flex;
     align-items: center;
@@ -270,6 +295,36 @@ nav.top {
     background-size: cover;
     overflow: hidden;
 }
+
+.titleA {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 50%;
+    right: 38%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+}
+.titleA h3 {
+    text-align: right;
+    font-size: 2em;
+}
+.titleA p:first-of-type {
+    text-align: right;
+}
+.titleA p:nth-of-type(2) {
+    text-align: justify;
+    word-break: break-all;
+    color: #adadad;
+    padding: 10px 0 10px 0;
+}
+.titleA p:last-of-type {
+    color: #797979;
+    text-align: right;
+}
+
+
 .top50 .box {
     margin: 0 auto;
     background: url(../imgs/projectbackground.png) 0 0 no-repeat;
@@ -296,3 +351,25 @@ nav.top {
     bottom: 3%;
     right: 0;
  }
+
+
+ .titleB {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 50%;
+    right: 22%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+}
+.titleB h3 {
+    font-size: 2em;
+}
+
+.titleB p:nth-of-type(2) {
+    text-align: justify;
+    word-break: break-all;
+    color: #adadad;
+    padding: 10px 0 10px 0;
+}
