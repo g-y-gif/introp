@@ -38,14 +38,14 @@ li, ul {
 }
 nav.top {
     width: 100%;
-    height: 70px;
+    height: 80px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 100;
 }
 .top > ul {
-    width: 800px;
+    width: 850px;
     height: 100%;
     display: flex;
     float: right;
@@ -345,6 +345,13 @@ nav.top {
     word-break: break-all;
     color: #adadad;
     padding: 10px 0 10px 0;
+}
+
+.DESIGN {
+    width: 100%;
+    height: 100vh;
+    background: url(../intropp/imgs/ticket.png);
+    color: none;
 }
 
 
