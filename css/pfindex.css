@@ -201,13 +201,14 @@ nav.top {
 
 
 /* project */
-.projectA, .projectB {
+.projectA, .projectB, .DESIGN {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 .projectA > .half,
-.projectB > .half {
+.projectB > .half,
+.DESIGN > .half {
     width: 100%;
     height: 50%;
     background: #fff;
@@ -258,7 +259,7 @@ nav.top {
     object-position: top;
 }
 
-.top50, .btop50  {
+.top50, .btop50, .ctop50  {
     display: flex;
     align-items: center;
 }
@@ -278,7 +279,6 @@ nav.top {
     right: 38%;
     display: flex;
     flex-direction: column;
-    /* justify-content: right; */
 }
 .titleA h3 {
     text-align: right;
@@ -306,12 +306,15 @@ nav.top {
 .btop50 .box {
     background: url(../imgs/projectBbackground2.png) 50% 70% no-repeat;
     background-size: 110%;
-    border-radius: 0;
     background-attachment: fixed;
     position: relative;
 }
 
-.top50 h1 {
+.ctop50 .box {
+    background: url(../imgs/designBacground.jpg) 30% 0 no-repeat;
+    background-size: cover;
+}
+.top50 h1, .ctop50 h1 {
    font-size: 5.2em;
    color: #fff;
    padding-left: 30px;
@@ -340,19 +343,45 @@ nav.top {
     font-size: 2em;
 }
 
-.titleB p:nth-of-type(2) {
+.titleB p:nth-of-type(2),
+.titleC p {
     text-align: justify;
     word-break: break-all;
     color: #adadad;
     padding: 10px 0 10px 0;
 }
 
-.DESIGN {
-    width: 100%;
-    height: 100vh;
-    background: url(../intropp/imgs/ticket.png);
-    color: none;
+.DESIGN .ticket{
+    width: 600px;
+    height: 600px;
+    background: url(../imgs/ticket.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    transform: translate(-80%, -75%);
 }
+
+.cinema {
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+.titleC {
+    position: absolute;
+    width: 22%;
+    height: 40%;
+    top: 53%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleC h3 {
+    font-size: 1.6em;
+}
+
 
 
 /* last page */
